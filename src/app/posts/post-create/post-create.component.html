@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="col-md-12">
+    <h2 style="text-align: center;">Create post</h2>
+    <mat-card>
+      <mat-form-field>
+        <textarea matInput name="name" rows="8" cols="80" [(ngModel)]="enteredValue"></textarea>
+        <br>
+      </mat-form-field>
+      <br>
+      <button mat-raised-button (click)="onAddPost()">Submit</button>
+    </mat-card>
+
+    <p>{{ newPost }}</p>
+  </div>
+</div>
